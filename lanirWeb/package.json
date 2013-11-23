@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "lanirWeb",
   "main": "hello-world-server.js",
+  "dependencies": {
+      "express": "*",
+      "lirc_node": "*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
   },
