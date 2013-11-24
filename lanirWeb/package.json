@@ -1,22 +1,31 @@
 {
-  "name": "lanirWeb",
-  "version": "0.1.0",
-  "description": "lanirWeb",
-  "main": "hello-world-server.js",
-  "dependencies": {
-      "express": "*",
-      "lirc_node": "*"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
-  },
-  "repository": "",
-  "keywords": [
-    "Node.js",
-    "Eclipse",
-    "Nodeclipse"
-  ],
-  "author": "",
-  "license": "MIT",
-  "readmeFilename": "README.md"
+    "name": "lanirWeb",
+    "description": "A NodeJS / Express app that creates a JSON API for LIRC",
+    "main": "app.js",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "3.0.6",
+        "lirc_node": "*"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*",
+        "sinon": "*",
+        "supertest": "*",
+        "nodemon": "*",
+        "grunt": "*",
+        "grunt-contrib-less": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/joe-forbes/lanir.git",
+        "path": "lanirWeb"
+    },
+    "author": "Joe Forbes (joe.forbes@gmail.com)"
 }
