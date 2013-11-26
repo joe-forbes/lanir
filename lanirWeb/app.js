@@ -3,7 +3,7 @@
 // based on lirc_web by Alex Bain <alex@alexba.in>
 
 // Set this to true if you'd like to emulate a list of remotes for development
-var DEVELOPER_MODE = false;
+var DEVELOPER_MODE = true;
 
 var express = require('express');
 var lirc_node = require('lirc_node');
