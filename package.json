@@ -1,5 +1,5 @@
 {
-    "name": "lanirWeb",
+    "name": "lanir_node",
     "description": "A NodeJS / Express app that creates a JSON API for LIRC",
     "main": "app.js",
     "version": "0.0.1",
@@ -24,8 +24,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/joe-forbes/lanir.git",
-        "path": "lanirWeb"
+        "url": "git://github.com/joe-forbes/lanir.git"
     },
     "author": "Joe Forbes (joe.forbes@gmail.com)"
 }
