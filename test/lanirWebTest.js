@@ -4,7 +4,7 @@ var request = require('supertest');
 var sinon = require('sinon');
 
 
-describe('lirc_web', function() {
+describe('lanirWeb', function() {
 
     describe('routes', function() {
 
