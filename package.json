@@ -1,30 +1,37 @@
 {
-    "name": "lanir_node",
-    "description": "A NodeJS / Express app that creates a JSON API for LIRC",
-    "main": "app.js",
-    "version": "0.0.1",
-    "private": true,
-    "dependencies": {
-        "express": "3.0.6",
-        "lirc_node": "*"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "should": "*",
-        "sinon": "*",
-        "supertest": "*",
-        "nodemon": "*",
-        "grunt": "*",
-        "grunt-contrib-less": "*",
-        "grunt-contrib-uglify": "*",
-        "grunt-contrib-watch": "*"
-    },
-    "scripts": {
-        "test": "make test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/joe-forbes/lanir.git"
-    },
-    "author": "Joe Forbes (joe.forbes@gmail.com)"
+  "name": "lanir_node",
+  "description": "A NodeJS / Express app that creates a JSON API for LIRC",
+  "main": "server.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "3.0.6",
+    "lirc_node": "*"
+  },
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "mocha": "*",
+    "should": "^5.0.0",
+    "sinon": "^1.12.2",
+    "supertest": "^0.15.0"
+  },
+  "scripts": {
+    "test": "npm run test-all",
+    "test-all": "mocha -R spec",
+    "test-all-coverage": "mocha --require blanket -R html-cov --recursive > coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joe-forbes/lanir.git"
+  },
+  "author": "Joe Forbes (joe.forbes@gmail.com)",
+  "config": {
+    "blanket": {
+      "pattern": "",
+      "data-cover-never": [
+        "node_modules",
+        "test"
+      ]
+    }
+  }
 }
