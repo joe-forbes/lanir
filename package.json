@@ -6,7 +6,9 @@
   "private": true,
   "dependencies": {
     "express": "3.0.6",
-    "lirc_node": "*"
+    "lirc_node": "*",
+    "nconf": "^0.7.1",
+    "winston": "^0.9.0"
   },
   "devDependencies": {
     "blanket": "^1.1.6",

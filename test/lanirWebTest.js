@@ -1,19 +1,21 @@
-var server = require('../server');
+var webServer = require('../webServer');
 var request = require('supertest');
 
 require("should");
 require("blanket");
+
+webServer.start(1337);
 
 describe('lanirWeb', function() {
 
 	describe('routes', function() {
 
 		it('should have an index route accessible via GET', function(done) {
-			request(server).get('/').expect(200, done);
+			request(webServer).get('/').expect(200, done);
 		});
 
 		it('should have an API route accessible via POST', function(done) {
-			request(server).post('/remotes/tv/power').expect(200, done);
+			request(webServer).post('/remotes/tv/power').expect(200, done);
 		});
 
 	});
@@ -21,11 +23,11 @@ describe('lanirWeb', function() {
 	describe('index action', function() {
 
 		it('should return JSON', function(done) {
-			request(server).get('/').expect('Content-Type',  /application\/json/, done);
+			request(webServer).get('/').expect('Content-Type',  /application\/json/, done);
 		});
 
 		it('should return JSON in the format { remotes: [{name: ..., commands: [...]}]}', function(done) {
-			request(server).get('/').end(function(err, res) {
+			request(webServer).get('/').end(function(err, res) {
 				if (err) {
 					throw err;
 				}
