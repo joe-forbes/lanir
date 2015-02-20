@@ -3,7 +3,7 @@
 // based on lirc_web by Alex Bain <alex@alexba.in>
 
 // Set this to true if you'd like to emulate a list of remotes for development
-var DEVELOPER_MODE = true;
+var DEVELOPER_MODE = false;
 
 var express = require('express');
 var lirc_node = require('lirc_node');
@@ -11,15 +11,9 @@ var logger = require("./logger");
 
 var webServer = module.exports = express();
 
-if (DEVELOPER_MODE) {
-	lirc_node.remotes = { 'Foobar': ['foo', 'bar', 'foo/bar'], 'Spam': ['Spam', 'Eggs', 'Bacon'] };
-	logger.debug("lirc_node initialized (developer mode).");
-} else {
-	lirc_node.init();	
-	logger.info("lirc_node initialized.");
-}
-
 webServer.start = function(port) {
+	lirc_node.init();	
+	logger.debug("lirc_node initialized.");
 	webServer.listen(port);
 	logger.info("lanirWeb listening on port " + port + ".");
 };
