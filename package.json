@@ -2,7 +2,7 @@
   "name": "lanir_node",
   "description": "A NodeJS / Express app that creates a JSON API for LIRC",
   "main": "server.js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "dependencies": {
     "express": "3.0.6",
