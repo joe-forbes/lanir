@@ -7,8 +7,8 @@
 
 try {
   var util = require("util");
-  var logger = require("./logger");
-  var configger = require("./configger");
+  var logger = require("./util/logger");
+  var configger = require("./util/configger");
   var packageJson = require('./package.json');
 } catch (e) {
   console.log("Error initializing application", e);

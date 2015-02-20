@@ -2,7 +2,7 @@ require("should");
 require("blanket");
 require("util");
 
-var logger = require("../logger");
+var logger = require("../util/logger");
 
 logger.addTarget({
 	targetType : "console"

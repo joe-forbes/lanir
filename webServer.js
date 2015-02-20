@@ -2,12 +2,9 @@
 // by Joe Forbes <joe.forbes@gmail.com>
 // based on lirc_web by Alex Bain <alex@alexba.in>
 
-// Set this to true if you'd like to emulate a list of remotes for development
-var DEVELOPER_MODE = false;
-
 var express = require('express');
 var lirc_node = require('lirc_node');
-var logger = require("./logger");
+var logger = require("./util/logger");
 
 var webServer = module.exports = express();
 
@@ -17,7 +14,6 @@ webServer.start = function(port) {
 	webServer.listen(port);
 	logger.info("lanirWeb listening on port " + port + ".");
 };
-
 
 webServer.get('/', function(req, res) {
         logger.debug("returning list of remotes");
