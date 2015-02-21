@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "lanir-remotes-v0.0.1",
+    "type": "object",
+    "properties": {
+        "remotes": {
+            "type": "array",
+            "items": {
+            	"type": "object",
+            	"properties": {
+            		"name": "string",
+            		"commands": {
+            			"type": "array",
+            			"items": {
+            				"type": "string"
+            			},
+            			"minItems": 1,
+            			"uniqueItems": true
+            		}
+            	},
+            	"required": ["name", "commands"]
+            },
+            "uniqueItems": true
+        }
+    },
+    "required": ["remotes"]
+}

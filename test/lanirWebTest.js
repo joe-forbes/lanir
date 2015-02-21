@@ -3,29 +3,9 @@ require("blanket");
 var util = require("util");
 var jjv = require("jjv")();
 
-jjv.addSchema("remotes", {
-    "type": "object",
-    "properties": {
-        "remotes": {
-            "type": "array",
-            "items": {
-            	"type": "object",
-            	"properties": {
-            		"commands": {
-            			"type": "array",
-            			"items": {
-            				"type": "string"
-            			},
-            			"minItems": 1,
-            			"uniqueItems": true
-            		}
-            	}
-            },
-            "uniqueItems": true 
-        }
-    },
-    "required": ["remotes"]
-});
+var remotesSchema = require("../resources/json-schema/remotes.json");
+
+jjv.addSchema("remotes", remotesSchema);
 
 var logger = require("../util/logger");
 
