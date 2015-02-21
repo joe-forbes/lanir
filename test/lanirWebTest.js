@@ -1,6 +1,31 @@
-require("should");
+var should = require("should");
 require("blanket");
-require("util");
+var util = require("util");
+var jjv = require("jjv")();
+
+jjv.addSchema("remotes", {
+    "type": "object",
+    "properties": {
+        "remotes": {
+            "type": "array",
+            "items": {
+            	"type": "object",
+            	"properties": {
+            		"commands": {
+            			"type": "array",
+            			"items": {
+            				"type": "string"
+            			},
+            			"minItems": 1,
+            			"uniqueItems": true
+            		}
+            	}
+            },
+            "uniqueItems": true 
+        }
+    },
+    "required": ["remotes"]
+});
 
 var logger = require("../util/logger");
 
@@ -54,22 +79,15 @@ describe('webServer tests', function() {
 			
 		});
 
-		it('should return JSON in the format { remotes: [{name: ..., commands: [...]}]}', function(done) {
+		it('should return JSON that passes JJV validation', function(done) {
 			request(webServer).get('/').end(function(err, res) {
 				if (err) {
 					throw err;
 				}
 				logger.debug(res.text);
 				response = JSON.parse(res.text);
-				response.should.have.property("remotes").which.is.instanceOf(Array);
-				for ( var i in response.remotes) {
-					var remote = response.remotes[i];
-					remote.should.have.property("name").which.is.of.type("string");
-					remote.should.have.property("commands").which.is.instanceOf(Array);
-					for ( var s in remote.commands) {
-						remote.commands[s].should.be.of.type("string");
-					}
-				}
+				var errors = jjv.validate("remotes", response);
+				should.not.exist(errors);
 				done();
 			});
 		});
