@@ -9,7 +9,7 @@ var defaultConsoleConfig = {
   colorize : true
 };
 
-var defaultFileConfig = config = {
+var defaultFileConfig = {
   level : 'info',
   filename : './app.log',
   handleExceptions : true,
