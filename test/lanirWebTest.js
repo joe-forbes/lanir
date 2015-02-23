@@ -1,4 +1,4 @@
-var should = require("should");
+var should = require("chai").should();
 require("blanket");
 var util = require("util");
 var jjv = require("jjv")();
