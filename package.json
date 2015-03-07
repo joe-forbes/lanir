@@ -13,14 +13,11 @@
         "should": "*",
         "sinon": "*",
         "supertest": "*",
-        "nodemon": "*",
-        "grunt": "*",
-        "grunt-contrib-less": "*",
-        "grunt-contrib-uglify": "*",
-        "grunt-contrib-watch": "*"
+        "nodemon": "*"
     },
     "scripts": {
-        "test": "make test"
+      "test": "npm run test-all",
+      "test-all": "mocha -R spec"
     },
     "repository": {
         "type": "git",
