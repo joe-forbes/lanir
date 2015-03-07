@@ -1,4 +1,4 @@
-var app = require('../app');
+var server = require('../server');
 var assert = require('assert');
 var request = require('supertest');
 var sinon = require('sinon');
@@ -9,11 +9,11 @@ describe('lanirWeb', function() {
     describe('routes', function() {
 
         it('should have an index route accessible via GET', function(done) {
-            assert(request(app).get('/').expect(200, done));
+            assert(request(server).get('/').expect(200, done));
         });
 
         it('should have an API route accessible via POST', function(done) {
-            assert(request(app).post('/remotes/tv/power').expect(200, done));
+            assert(request(server).post('/remotes/tv/power').expect(200, done));
         });
 
     });
@@ -21,11 +21,11 @@ describe('lanirWeb', function() {
     describe('index action', function() {
 
         it('should return JSON', function(done) {
-            assert(request(app).get('/').expect('Content-Type', /application\/json/, done));
+            assert(request(server).get('/').expect('Content-Type', /application\/json/, done));
         });
 
         it('should return JSON in the format { remotes: [{name: ..., commands: [...]}]}', function(done) {
-			request(app)
+			request(server)
 			.get('/')
 			.end(function(err, res) {
 				assert.equal(err, null);

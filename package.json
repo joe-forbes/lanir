@@ -1,7 +1,6 @@
 {
     "name": "lanirDeviceService",
     "description": "A NodeJS JSON API for LIRC",
-    "main": "app.js",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

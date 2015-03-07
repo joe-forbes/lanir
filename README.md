@@ -34,7 +34,7 @@ npm install
 Start up the server:
 
 ```
-node app.js
+node server.js
 ```
 
 Verify the UI web works by opening ``http://SERVER:3000/`` in a web browser.
