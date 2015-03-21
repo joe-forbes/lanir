@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "lanir-remotes-v0.0.1",
+    "title": "lanir-remotes_v0.0.1",
     "type": "object",
     "properties": {
         "remotes": {

@@ -92,7 +92,7 @@ var logger = {
         winstonLogger.info(message);
       }
     }
-}
+};
 
 module.exports = logger;
 

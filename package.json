@@ -11,8 +11,8 @@
     "winston": "^0.9.0"
   },
   "devDependencies": {
-    "blanket": "^1.1.6",
     "chai": "^2.0.0",
+    "istanbul": "^0.3.8",
     "jjv": "^1.0.2",
     "mocha": "*",
     "proxyquire": "^1.3.1",
@@ -21,21 +21,11 @@
   "scripts": {
     "test": "npm run test-all",
     "test-all": "mocha -R spec",
-    "test-all-coverage": "mocha --require blanket -R html-cov --recursive > coverage.html"
+    "test-all-coverage": "istanbul cover _mocha -- -R spec"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/joe-forbes/lanir.git"
   },
-  "author": "Joe Forbes (joe.forbes@gmail.com)",
-  "config": {
-    "blanket": {
-      "pattern": "",
-      "data-cover-never": [
-        "node_modules",
-        "test",
-        "util"
-      ]
-    }
-  }
+  "author": "Joe Forbes (joe.forbes@gmail.com)"
 }

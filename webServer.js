@@ -20,12 +20,15 @@ webServer.get('/', function(req, res) {
         var result = {};
         var remotes = [];
         for(var r in lirc_node.remotes){
-            var remote = {};
-            remote.name = r;
-            remote.commands = lirc_node.remotes[r];
-            remotes.push(remote);
+            if(lirc_node.remotes.hasOwnProperty(r)) {
+                var remote = {};
+                remote.name = r;
+                remote.commands = lirc_node.remotes[r];
+                remotes.push(remote);
+            }
         }
         result.remotes = remotes;
+        res.setHeader('content-type', 'application/lanir-remotes_v0.0.1+json;profile=http://github.com/joe-forbes/json-schema/lanir-remotes_v0.0.1#');
         res.send(result);
 });
 
