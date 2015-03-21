@@ -15,13 +15,13 @@ try {
   return;
 }
 
-var config = configger.load({http:{port:8080}});
+var config = configger.load({http: {port: 8080}});
 
 logger.addTargets(config.loggingTargets);
 
 logger.info("lanirWeb version: " + packageJson.version);
 logger.debug("config: " + util.inspect(config, {depth: null}));
-logger.debug("package.json: " + util.inspect(packageJson,{depth: null}));
+logger.debug("package.json: " + util.inspect(packageJson, {depth: null}));
 
 var webServer = require('./webServer');
 webServer.start(config.webServer.port);
