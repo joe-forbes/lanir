@@ -1,0 +1,26 @@
+{"level":"debug","message":"in lircNodeStub.init()","timestamp":"2015-07-17T23:29:39.458Z"}
+{"level":"debug","message":"lirc_node initialized.","timestamp":"2015-07-17T23:29:39.460Z"}
+{"level":"info","message":"lanirWeb listening on port 1337.","timestamp":"2015-07-17T23:29:39.462Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-17T23:29:39.485Z"}
+{"level":"debug","message":"in send function","timestamp":"2015-07-17T23:29:39.498Z"}
+{"level":"debug","message":"remote = tv","timestamp":"2015-07-17T23:29:39.499Z"}
+{"level":"debug","message":"command = power","timestamp":"2015-07-17T23:29:39.499Z"}
+{"level":"debug","message":"in lircNodeStub.irsend.send_once()","timestamp":"2015-07-17T23:29:39.499Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-17T23:29:39.503Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-17T23:29:39.506Z"}
+{"level":"debug","message":"{\n  \"remotes\": [\n    {\n      \"name\": \"Foobar\",\n      \"commands\": [\n        \"foo\",\n        \"bar\",\n        \"foo/bar\"\n      ]\n    },\n    {\n      \"name\": \"Spam\",\n      \"commands\": [\n        \"Spam\",\n        \"Eggs\",\n        \"Bacon\"\n      ]\n    }\n  ]\n}","timestamp":"2015-07-17T23:29:39.507Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-17T23:29:39.513Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-17T23:29:39.516Z"}
+{"level":"debug","message":"in lircNodeStub.init()","timestamp":"2015-07-18T04:00:24.756Z"}
+{"level":"debug","message":"lirc_node initialized.","timestamp":"2015-07-18T04:00:24.758Z"}
+{"level":"info","message":"lanirWeb listening on port 1337.","timestamp":"2015-07-18T04:00:24.761Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:00:24.793Z"}
+{"level":"debug","message":"in send function","timestamp":"2015-07-18T04:00:24.807Z"}
+{"level":"debug","message":"remote = tv","timestamp":"2015-07-18T04:00:24.807Z"}
+{"level":"debug","message":"command = power","timestamp":"2015-07-18T04:00:24.807Z"}
+{"level":"debug","message":"in lircNodeStub.irsend.send_once()","timestamp":"2015-07-18T04:00:24.808Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:00:24.814Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:00:24.819Z"}
+{"level":"debug","message":"{\n  \"remotes\": [\n    {\n      \"name\": \"Foobar\",\n      \"commands\": [\n        \"foo\",\n        \"bar\",\n        \"foo/bar\"\n      ]\n    },\n    {\n      \"name\": \"Spam\",\n      \"commands\": [\n        \"Spam\",\n        \"Eggs\",\n        \"Bacon\"\n      ]\n    }\n  ]\n}","timestamp":"2015-07-18T04:00:24.821Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:00:24.828Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:00:24.833Z"}
