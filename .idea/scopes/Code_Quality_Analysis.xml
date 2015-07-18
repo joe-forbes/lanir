@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Code Quality Analysis" pattern="file[lanirDeviceService]:*||file[lanirDeviceService]:util//*||file[lanirDeviceService]:test//*||file[lanirDeviceService]:resources//*||file[lanirDeviceService]:config//*" />
+</component>
