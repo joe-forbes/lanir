@@ -50,3 +50,16 @@
 {"level":"debug","message":"{\n  \"remotes\": [\n    {\n      \"name\": \"Foobar\",\n      \"commands\": [\n        \"foo\",\n        \"bar\",\n        \"foo/bar\"\n      ]\n    },\n    {\n      \"name\": \"Spam\",\n      \"commands\": [\n        \"Spam\",\n        \"Eggs\",\n        \"Bacon\"\n      ]\n    }\n  ]\n}","timestamp":"2015-07-18T04:18:35.819Z"}
 {"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:18:35.823Z"}
 {"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:18:35.826Z"}
+{"level":"debug","message":"in lircNodeStub.init()","timestamp":"2015-07-18T04:42:48.831Z"}
+{"level":"debug","message":"lirc_node initialized.","timestamp":"2015-07-18T04:42:48.832Z"}
+{"level":"info","message":"lanirWeb listening on port 1337.","timestamp":"2015-07-18T04:42:48.835Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:42:48.865Z"}
+{"level":"debug","message":"in send function","timestamp":"2015-07-18T04:42:48.880Z"}
+{"level":"debug","message":"remote = tv","timestamp":"2015-07-18T04:42:48.880Z"}
+{"level":"debug","message":"command = power","timestamp":"2015-07-18T04:42:48.880Z"}
+{"level":"debug","message":"in lircNodeStub.irsend.send_once()","timestamp":"2015-07-18T04:42:48.880Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:42:48.887Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:42:48.891Z"}
+{"level":"debug","message":"{\n  \"remotes\": [\n    {\n      \"name\": \"Foobar\",\n      \"commands\": [\n        \"foo\",\n        \"bar\",\n        \"foo/bar\"\n      ]\n    },\n    {\n      \"name\": \"Spam\",\n      \"commands\": [\n        \"Spam\",\n        \"Eggs\",\n        \"Bacon\"\n      ]\n    }\n  ]\n}","timestamp":"2015-07-18T04:42:48.893Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:42:48.900Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:42:48.905Z"}
