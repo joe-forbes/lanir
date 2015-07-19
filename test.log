@@ -63,3 +63,16 @@
 {"level":"debug","message":"{\n  \"remotes\": [\n    {\n      \"name\": \"Foobar\",\n      \"commands\": [\n        \"foo\",\n        \"bar\",\n        \"foo/bar\"\n      ]\n    },\n    {\n      \"name\": \"Spam\",\n      \"commands\": [\n        \"Spam\",\n        \"Eggs\",\n        \"Bacon\"\n      ]\n    }\n  ]\n}","timestamp":"2015-07-18T04:42:48.893Z"}
 {"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:42:48.900Z"}
 {"level":"debug","message":"returning list of remotes","timestamp":"2015-07-18T04:42:48.905Z"}
+{"level":"debug","message":"in lircNodeStub.init()","timestamp":"2015-07-19T20:35:40.268Z"}
+{"level":"debug","message":"lirc_node initialized.","timestamp":"2015-07-19T20:35:40.271Z"}
+{"level":"info","message":"lanirWeb listening on port 1337.","timestamp":"2015-07-19T20:35:40.276Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-19T20:35:40.308Z"}
+{"level":"debug","message":"in send function","timestamp":"2015-07-19T20:35:40.323Z"}
+{"level":"debug","message":"remote = tv","timestamp":"2015-07-19T20:35:40.323Z"}
+{"level":"debug","message":"command = power","timestamp":"2015-07-19T20:35:40.323Z"}
+{"level":"debug","message":"in lircNodeStub.irsend.send_once()","timestamp":"2015-07-19T20:35:40.323Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-19T20:35:40.330Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-19T20:35:40.335Z"}
+{"level":"debug","message":"{\n  \"remotes\": [\n    {\n      \"name\": \"Foobar\",\n      \"commands\": [\n        \"foo\",\n        \"bar\",\n        \"foo/bar\"\n      ]\n    },\n    {\n      \"name\": \"Spam\",\n      \"commands\": [\n        \"Spam\",\n        \"Eggs\",\n        \"Bacon\"\n      ]\n    }\n  ]\n}","timestamp":"2015-07-19T20:35:40.337Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-19T20:35:40.343Z"}
+{"level":"debug","message":"returning list of remotes","timestamp":"2015-07-19T20:35:40.347Z"}
