@@ -278,7 +278,7 @@
       <scope name="Code Quality Analysis" level="WARNING" enabled="true" />
     </inspection_tool>
     <inspection_tool class="Eslint" enabled="true" level="ERROR" enabled_by_default="false">
-      <scope name="Code Quality Analysis" level="ERROR" enabled="true" />
+      <scope name="Code Quality Analysis" level="ERROR" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ExceptionCaughtLocallyJS" enabled="true" level="WARNING" enabled_by_default="false">
       <scope name="Code Quality Analysis" level="WARNING" enabled="true" />
@@ -321,7 +321,7 @@
       <scope name="Code Quality Analysis" level="ERROR" enabled="true" />
     </inspection_tool>
     <inspection_tool class="GjsLint" enabled="true" level="WARNING" enabled_by_default="false">
-      <scope name="Code Quality Analysis" level="WARNING" enabled="true" />
+      <scope name="Code Quality Analysis" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="HamlNestedTagContent" enabled="true" level="WARNING" enabled_by_default="false">
       <scope name="Code Quality Analysis" level="WARNING" enabled="true" />
@@ -481,7 +481,7 @@
     <inspection_tool class="JSFileReferences" enabled="true" level="WARNING" enabled_by_default="false">
       <scope name="Code Quality Analysis" level="WARNING" enabled="true" />
     </inspection_tool>
-    <inspection_tool class="JSHint" enabled="true" level="ERROR" enabled_by_default="false">
+    <inspection_tool class="JSHint" enabled="true" level="ERROR" enabled_by_default="true">
       <scope name="Code Quality Analysis" level="ERROR" enabled="true" />
     </inspection_tool>
     <inspection_tool class="JSJQueryEfficiency" enabled="true" level="WARNING" enabled_by_default="false">
@@ -493,8 +493,8 @@
     <inspection_tool class="JSLastCommaInObjectLiteral" enabled="true" level="WARNING" enabled_by_default="false">
       <scope name="Code Quality Analysis" level="WARNING" enabled="true" />
     </inspection_tool>
-    <inspection_tool class="JSLint" enabled="true" level="ERROR" enabled_by_default="false">
-      <scope name="Code Quality Analysis" level="ERROR" enabled="true" />
+    <inspection_tool class="JSLint" enabled="false" level="ERROR" enabled_by_default="false">
+      <scope name="Code Quality Analysis" level="ERROR" enabled="false" />
     </inspection_tool>
     <inspection_tool class="JSMethodCanBeStatic" enabled="true" level="WARNING" enabled_by_default="false">
       <scope name="Code Quality Analysis" level="WARNING" enabled="true" />
@@ -575,7 +575,7 @@
       <scope name="Code Quality Analysis" level="ERROR" enabled="true" />
     </inspection_tool>
     <inspection_tool class="Jscs" enabled="true" level="ERROR" enabled_by_default="false">
-      <scope name="Code Quality Analysis" level="ERROR" enabled="true" />
+      <scope name="Code Quality Analysis" level="ERROR" enabled="false" />
     </inspection_tool>
     <inspection_tool class="JsonStandardCompliance" enabled="true" level="ERROR" enabled_by_default="false">
       <scope name="Code Quality Analysis" level="ERROR" enabled="true" />
